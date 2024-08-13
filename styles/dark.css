@@ -39,6 +39,10 @@
   height: 25px;
   position: absolute;
   border: 1px solid var(--accent-color);
+  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  border-bottom: none;
+  border-left: none;
 }
 
 .decorated-zone::after {
@@ -47,21 +51,25 @@
   height: 25px;
   position: absolute;
   border: 1px solid var(--accent-color);
-}
-
-.decorated-zone::before {
-  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);;
-  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  border-bottom: none;
-  border-left: none;
-}
-
-.decorated-zone::after {
   bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   border-top: none;
   border-right: none;
 }
+
+/* .decorated-zone::before {
+  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  border-bottom: none;
+  border-left: none;
+} */
+
+/* .decorated-zone::after {
+  bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  border-top: none;
+  border-right: none;
+} */
 
 .text__dark {
   position: absolute;
