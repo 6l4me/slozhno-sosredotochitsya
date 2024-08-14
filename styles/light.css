@@ -1,11 +1,4 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
-  /* Переменные светлой темы */
+.page.theme_light {
   --accent-color: #FF8DCB;
   --main-font: 'IBM Plex mono';
   --normal-weight: normal;
@@ -16,15 +9,8 @@
   --background-img: url(../images/cover-image-light.png);
 }
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
-
 @media (prefers-color-scheme: light) {
-  :root {
+  .page {
     --accent-color: #FF8DCB;
     --main-font: 'IBM Plex mono';
     --normal-weight: normal;
@@ -40,25 +26,37 @@
     background-position: center;
     background-size: cover;
   }
+
+  .decorated-zone {
+    position: relative;
+  }
   
   .decorated-zone::before {
+    content: " ";
+    width: 25px;
+    height: 25px;
+    position: absolute;
     border: 1px solid var(--second-color);
+    top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+    right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
     border-bottom: none;
     border-left: none;
   }
   
   .decorated-zone::after {
+    content: " ";
+    width: 25px;
+    height: 25px;
+    position: absolute;
     border: 1px solid var(--second-color);
+    bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+    left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
     border-top: none;
     border-right: none;
   }
   
   .header__theme-menu-button_active {
     border: 1px solid var(--second-color);
-  }
-  
-  .text__dark {
-    display: none;
   }
   
   .title-decor {

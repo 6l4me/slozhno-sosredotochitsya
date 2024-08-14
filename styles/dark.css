@@ -1,10 +1,4 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-dark {
+.page.theme_dark {
   --accent-color: #ff0070;
   --main-font: 'IBM Plex mono';
   --normal-weight: normal;
@@ -15,25 +9,17 @@
   --background-img: url(../images/cover-image-dark.png);
 }
 
-
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
-
-.header {
+.page.theme_dark .header {
   background-image: var(--background-img);
   background-position: center;
   background-size: cover;
 }
 
-.decorated-zone {
+.page.theme_dark .decorated-zone {
   position: relative;
 }
 
-.decorated-zone::before {
+.page.theme_dark .decorated-zone::before {
   content: " ";
   width: 25px;
   height: 25px;
@@ -45,7 +31,7 @@
   border-left: none;
 }
 
-.decorated-zone::after {
+.page.theme_dark .decorated-zone::after {
   content: " ";
   width: 25px;
   height: 25px;
@@ -57,21 +43,7 @@
   border-right: none;
 }
 
-/* .decorated-zone::before {
-  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  border-bottom: none;
-  border-left: none;
-} */
-
-/* .decorated-zone::after {
-  bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  border-top: none;
-  border-right: none;
-} */
-
-.text__dark {
+.page.theme_dark .text__dark {
   position: absolute;
   top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   left: clamp(19rem, -3.8411rem + 97.4555vw, 42.9375rem);
@@ -81,13 +53,13 @@
   text-shadow: initial;
 }
 
-.text__dark::before {
+.page.theme_dark .text__dark::before {
   content: 'REC';
   color: var(--accent-color);
   
 }
 
-.text__dark::after {
+.page.theme_dark .text__dark::after {
   content: '';
   display: inline-block;
   width: 9px;
@@ -98,8 +70,37 @@
   margin-left: 10px;
 }
 
+.page.theme_dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.page.theme_dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.page.theme_dark .title-decor {
+  color: var(--main-color);
+}
+
+.page.theme_dark .section_title {
+  color: var(--accent-color);
+}
+
+.page.theme_dark .paragraph_title {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
 @media (width > 767px) {
-  .text__dark {
+  .page.theme_dark .text__dark {
     left: clamp(42.9375rem, -5.0625rem + 100vw, 58.9375rem);
   }
 }

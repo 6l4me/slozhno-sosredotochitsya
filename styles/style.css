@@ -41,19 +41,13 @@
 
 .header__theme-menu-button:hover {
   cursor: pointer;
-  border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
 }
 
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
-}
-
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
   pointer-events: none;
 }
 
@@ -72,7 +66,6 @@
   font-family: var(--main-font), sans-serif;
   font-weight: var(--bold-weight);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-  color: var(--main-color);
   background-color: var(--accent-color);
   flex-grow: 1;
 }
@@ -95,7 +88,6 @@
   font-family: var(--main-font), sans-serif;
   font-weight: var(--bold-weight);
   font-size: 18px;
-  color: var(--accent-color);
 }
 
 .paragraph_container {
@@ -145,8 +137,6 @@
   font-family: var(--main-font), sans-serif;
   font-weight: var(--normal-weight);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-  color: var(--main-color);
-  background-color: var(--accent-color);
   flex-grow: 1;
 }
 
