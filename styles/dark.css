@@ -1,8 +1,5 @@
 .page.theme_dark {
   --accent-color: #ff0070;
-  --main-font: 'IBM Plex mono';
-  --normal-weight: normal;
-  --bold-weight: bold;
   --main-color: #000028;
   --second-color: #f1b2ce;
   --title-color: #db00ff;
@@ -54,9 +51,9 @@
 }
 
 .page.theme_dark .text__dark::before {
-  content: 'REC';
+  content: 'rec';
   color: var(--accent-color);
-  
+  text-transform: uppercase;
 }
 
 .page.theme_dark .text__dark::after {
@@ -102,5 +99,12 @@
 @media (width > 767px) {
   .page.theme_dark .text__dark {
     left: clamp(42.9375rem, -5.0625rem + 100vw, 58.9375rem);
+  }
+}
+
+@media (width > 1023px) {
+  .page.theme_dark .text__dark {
+    right: clamp(1.8125rem, 1.8125rem + 0vw, 1.8125rem);
+    text-align: end;
   }
 }
