@@ -48,7 +48,7 @@
     border-top: none;
     border-right: none;
   }
-  
+
   .text__dark {
     display: none;
   }
@@ -81,3 +81,4 @@
     color: var(--second-color);
   }
 }
+
