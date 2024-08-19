@@ -6,6 +6,10 @@
   --background-img: url(../images/cover-image-light.png);
 }
 
+.theme_light .text__dark {
+    display: none;
+}
+
 @media (prefers-color-scheme: light) {
   .page {
     --accent-color: #FF8DCB;
@@ -49,7 +53,7 @@
     border-right: none;
   }
 
-  .text__dark {
+  .theme_auto .text__dark {
     display: none;
   }
 
