@@ -5,15 +5,6 @@
   --title-color: #db00ff;
 }
 
-.page.theme_auto .page {
-  background-image: url(../images/cover-image-dark.png);
-} 
-
-.page.theme_light .page {
-  background-image: url(../images/cover-image-light.png);
-  background-color: #FFF1F7;
-}
-
 .page.theme_dark .page {
   background-image: url(../images/cover-image-dark.png);
   background-color: var(--main-color);

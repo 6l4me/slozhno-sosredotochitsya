@@ -3,6 +3,7 @@
   --main-color: #FFF1F7;
   --second-color: #353430;
   --title-color: #ffc2e6;
+  --main-background: url(../images/cover-image-light.png);
 }
 
 .theme_light .text__dark {
@@ -10,13 +11,8 @@
 }
 
 .theme_light .page {
-  background-image: url(../images/cover-image-light.png);
-  background-color: #FFF1F7;
-}
-
-.theme_auto .page {
-  background-image: url(../images/cover-image-light.png);
-  background-color: #FFF1F7;
+  background-image: var(--main-background);
+  background-color: var(--main-color);
 }
 
 .page.theme_light .decorated-zone::before {
@@ -72,21 +68,22 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .page {
+  :root {
     --accent-color: #FF8DCB;
     --main-color: #FFF1F7;
     --second-color: #353430;
     --title-color: #ffc2e6;
+    --main-background: url(../images/cover-image-light.png);
   }
 
   .page.theme_light {
     background-image: url(../images/cover-image-light.png);
-    background-color: #FFF1F7;
+    background-color: var(--main-color);
   }
 
-  .page.theme_auto {
-    background-image: url(../images/cover-image-light.png);
-    background-color: #FFF1F7;
+  .page.theme_dark {
+    background-image: url(../images/cover-image-dark.png);
+    background-color: #000028;
   }
 
   .decorated-zone {
