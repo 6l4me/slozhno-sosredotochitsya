@@ -1,11 +1,18 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-color: var(--main-color);
+  background-color: #000028;
+  background-image: url(../images/cover-image-dark.png);
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.page.theme_light {
+  background-image: url(../images/cover-image-light.png);
+  background-color: #FFF1F7;
 }
 
 .header {
@@ -13,9 +20,6 @@
   padding-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
   height: 100vh;
   min-height: 668px;
-  /* background-image: url(../images/cover-image-dark.png); */
-  background-position: center;
-  background-size: cover;
 }
 
 .decorated-zone {
@@ -45,6 +49,8 @@
   border-top: none;
   border-right: none;
 }
+
+
 
 .text__dark {
   position: absolute;
