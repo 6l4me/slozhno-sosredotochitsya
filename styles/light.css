@@ -15,6 +15,11 @@
   background-size: cover;
 }
 
+.page.theme_auto .header {
+  background-color: var(--main-color);
+  background-image: none;
+} 
+
 .theme_light .header__theme-menu-button_active {
   border: 1px solid var(--second-color);
 }

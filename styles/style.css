@@ -13,9 +13,9 @@
   padding-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
   height: 100vh;
   min-height: 668px;
-  background-image: url(../images/cover-image-dark.png); 
+  background-image: url(../images/cover-image-dark.png);
   background-position: center; 
-  background-size: cover; 
+  background-size: cover;
 }
 
 .decorated-zone {

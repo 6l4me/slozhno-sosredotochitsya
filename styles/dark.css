@@ -5,6 +5,11 @@
   --title-color: #db00ff;
 }
 
+.page.theme_auto .header {
+  background-color: var(--main-color);
+  background-image: none;
+} 
+
 .page.theme_dark .header {
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
