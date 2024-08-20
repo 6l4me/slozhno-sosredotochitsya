@@ -10,10 +10,10 @@
     display: none;
 }
 
-.theme_light .page {
+/* .theme_light .page {
   background-image: var(--main-background);
   background-color: var(--main-color);
-}
+} */
 
 .page.theme_light .decorated-zone::before {
   content: " ";
