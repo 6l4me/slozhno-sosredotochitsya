@@ -423,6 +423,10 @@
     flex-grow: 0;
   }
 
+  .gallery {
+    max-height: 1090px;
+  }
+
   .footer {
     padding: 319px clamp(12.75rem, -0.75rem + 28.125vw, 17.25rem);
     min-height: 768px;
