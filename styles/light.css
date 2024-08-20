@@ -3,7 +3,6 @@
   --main-color: #FFF1F7;
   --second-color: #353430;
   --title-color: #ffc2e6;
-  --background-img: url(../images/cover-image-light.png);
 }
 
 .theme_light .text__dark {
@@ -11,7 +10,7 @@
 }
 
 .theme_light .header {
-  background-image: var(--background-img);
+  background-image: url(../images/cover-image-light.png);
   background-position: center;
   background-size: cover;
 }

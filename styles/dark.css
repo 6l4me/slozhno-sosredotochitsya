@@ -3,11 +3,10 @@
   --main-color: #000028;
   --second-color: #f1b2ce;
   --title-color: #db00ff;
-  --background-img: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark .header {
-  background-image: var(--background-img);
+  background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-size: cover;
 }

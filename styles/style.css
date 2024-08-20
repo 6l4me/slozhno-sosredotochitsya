@@ -13,9 +13,9 @@
   padding-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
   height: 100vh;
   min-height: 668px;
-  background-image: var(--background-img);
-  background-position: center;
-  background-size: cover;
+  background-image: url(../images/cover-image-dark.png); 
+  background-position: center; 
+  background-size: cover; 
 }
 
 .decorated-zone {
@@ -95,6 +95,7 @@
   text-align: center;
   padding: 1.5px 13px;
   color: var(--accent-color);
+  max-height: 26px;
 }
 
 .header__theme-menu-button:hover {
@@ -258,7 +259,7 @@
 
 @media (374px < width < 768px) {
   .header {
-    height: clamp(41.75rem, 20.5191rem + 90.5852vw, 64rem);
+    min-height: clamp(41.75rem, 20.5191rem + 90.5852vw, 64rem);
   }
 
   .card_size_xs {
@@ -289,13 +290,13 @@
 
 @media (767px < width < 1024px ) {
   .paragraph_container {
-    max-width: 472px;
+    max-width: clamp(29.5rem, -3.5rem + 68.75vw, 40.5rem);
   }
 }
 
 @media (width > 767px) {
   .header {
-    height: clamp(64rem, 112rem + -100vw, 48rem);
+    min-height: clamp(64rem, 112rem + -100vw, 48rem);
   }
 
   .header__title {
@@ -374,7 +375,7 @@
 @media (width > 1023px) {
   .header {
     padding-bottom: 134px;
-    height: 768px;
+    min-height: 768px;
   }
 
   .text__dark {
@@ -401,6 +402,18 @@
     grid-template-rows: repeat(1, auto);
     grid-template-columns: repeat(3, minmax(315px, 100%));
   }
+
+  .section_title {
+    min-width: 315px;
+  }
+
+  .section_text_why .paragraph_block {
+    min-width: 649px;
+  }
+
+  .section_text_how .paragraph_block {
+    min-width: 649px;
+  }
   
   .paragraph_container_what .title-decor {
     flex-grow: 0;
@@ -408,6 +421,7 @@
 
   .footer {
     padding: 319px clamp(12.75rem, -0.75rem + 28.125vw, 17.25rem);
+    min-height: 768px;
   }
 }
 
