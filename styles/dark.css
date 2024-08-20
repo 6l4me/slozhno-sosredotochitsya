@@ -3,10 +3,11 @@
   --main-color: #000028;
   --second-color: #f1b2ce;
   --title-color: #db00ff;
+  --main-background: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark .page {
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--main-background);
   background-color: var(--main-color);
 }
 

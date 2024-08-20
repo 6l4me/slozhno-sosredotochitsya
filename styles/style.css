@@ -10,11 +10,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-.page.theme_light {
-  background-image: url(../images/cover-image-light.png);
-  background-color: #FFF1F7;
-}
-
 .header {
   padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   padding-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
@@ -428,28 +423,28 @@
   }
 
   .card_size_xs {
-    width: 649px;
-    height: 260px;
+    min-width: 649px;
+    min-height: 260px;
   }
   
   .card_size_m {
-    width: 315px;
-    height: 595px;
+    min-width: 315px;
+    min-height: 595px;
   }
   
   .card_size_l {
-    width: 315px;
-    height: 768px;
+    min-width: 315px;
+    min-height: 768px;
   }
   
   .card_size_s {
-    width: 315px;
-    height: 315px;
+    min-width: 315px;
+    min-height: 315px;
   }
   
   .card_size_xl {
-    width: 649px;
-    height: 428px;
+    min-width: 649px;
+    min-height: 428px;
   }
 
   .footer {
