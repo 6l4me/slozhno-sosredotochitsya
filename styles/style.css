@@ -427,6 +427,31 @@
     max-height: 1090px;
   }
 
+  .card_size_xs {
+    width: 649px;
+    height: 260px;
+  }
+  
+  .card_size_m {
+    width: 315px;
+    height: 595px;
+  }
+  
+  .card_size_l {
+    width: 315px;
+    height: 768px;
+  }
+  
+  .card_size_s {
+    width: 315px;
+    height: 315px;
+  }
+  
+  .card_size_xl {
+    width: 649px;
+    height: 428px;
+  }
+
   .footer {
     padding: 319px clamp(12.75rem, -0.75rem + 28.125vw, 17.25rem);
     min-height: 768px;
