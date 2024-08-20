@@ -449,11 +449,10 @@
 
   .footer {
     padding: 319px clamp(12.75rem, -0.75rem + 28.125vw, 17.25rem);
-    min-height: 768px;
   }
 }
 
-@media (width > 767px) {
+/* @media (width > 767px) {
   .page.theme_dark .text__dark {
     left: clamp(42.9375rem, -5.0625rem + 100vw, 58.9375rem);
   }
@@ -464,4 +463,4 @@
     right: clamp(1.8125rem, 1.8125rem + 0vw, 1.8125rem);
     text-align: end;
   }
-}
+} */
