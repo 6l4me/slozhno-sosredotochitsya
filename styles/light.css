@@ -10,11 +10,6 @@
     display: none;
 }
 
-/* .theme_light .page {
-  background-image: var(--main-background);
-  background-color: var(--main-color);
-} */
-
 .page.theme_light .decorated-zone::before {
   content: " ";
   width: 25px;
@@ -80,11 +75,6 @@
     background-image: url(../images/cover-image-light.png);
     background-color: var(--main-color);
   }
-
-  /* .page.theme_dark {
-    background-image: url(../images/cover-image-dark.png);
-    background-color: #000028;
-  } */ 
 
   .decorated-zone {
     position: relative;
