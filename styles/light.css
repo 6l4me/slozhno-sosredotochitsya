@@ -6,9 +6,9 @@
   --main-background: url(../images/cover-image-light.png);
 }
 
-.theme_dark {
+/* .theme_dark {
   background-image: url(../images/cover-image-dark.png);
-}
+} */
 
 .theme_light .text__dark {
     display: none;
@@ -61,6 +61,10 @@
     --second-color: #353430;
     --title-color: #ffc2e6;
     --main-background: url(../images/cover-image-light.png);
+  }
+
+  .theme_dark {
+    background-image: url(../images/cover-image-dark.png);
   }
 
   .decorated-zone {
