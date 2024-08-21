@@ -261,27 +261,27 @@
   }
 
   .card_size_xs {
-    width: 352px;
+    min-width: 352px;
     height: 142px;
   }
   
   .card_size_m {
-    width: 355px;
+    min-width: 355px;
     height: 355px;
   }
   
   .card_size_l {
-    width: 355px;
+    min-width: 355px;
     height: 237px;
   }
   
   .card_size_s {
-    width: 354px;
+    min-width: 354px;
     height: 355px;
   }
   
   .card_size_xl {
-    width: 354px;
+    min-width: 354px;
     height: 237px;
   }
 }
