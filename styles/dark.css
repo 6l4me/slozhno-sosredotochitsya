@@ -3,12 +3,6 @@
   --main-color: #000028;
   --second-color: #f1b2ce;
   --title-color: #db00ff;
-  --main-background: url(../images/cover-image-dark.png);
-}
-
-.page.theme_dark {
-  background-image: var(--main-background);
-  background-color: var(--main-color);
 }
 
 .page.theme_dark .decorated-zone {
@@ -16,36 +10,19 @@
 }
 
 .page.theme_dark .decorated-zone::before {
-  content: " ";
-  width: 25px;
-  height: 25px;
-  position: absolute;
   border: 1px solid var(--accent-color);
-  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   border-bottom: none;
   border-left: none;
 }
 
 .page.theme_dark .decorated-zone::after {
-  content: " ";
-  width: 25px;
-  height: 25px;
-  position: absolute;
   border: 1px solid var(--accent-color);
-  bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   border-top: none;
   border-right: none;
 }
 
 .page.theme_dark .text__dark {
   position: absolute;
-  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  left: clamp(19rem, -3.8411rem + 97.4555vw, 42.9375rem);
-  font-family: var(--main-font), sans-serif;
-  font-weight: var(--normal-weight);
-  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   text-shadow: initial;
 }
 
