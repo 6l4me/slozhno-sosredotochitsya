@@ -10,30 +10,6 @@
     display: none;
 }
 
-.page.theme_light .decorated-zone::before {
-  content: " ";
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  border: 1px solid #353430;
-  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  border-bottom: none;
-  border-left: none;
-}
-
-.page.theme_light .decorated-zone::after {
-  content: " ";
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  border: 1px solid #353430;
-  bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  border-top: none;
-  border-right: none;
-}
-
 .theme_light .header__theme-menu-button_active {
   border: 1px solid var(--second-color);
 }
