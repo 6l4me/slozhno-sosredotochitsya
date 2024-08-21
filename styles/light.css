@@ -10,6 +10,18 @@
     display: none;
 }
 
+.theme_light .decorated-zone::before {
+  border: 1px solid var(--second-color);
+  border-bottom: none;
+  border-left: none;
+}
+
+.theme_light .decorated-zone::after {
+  border: 1px solid var(--second-color);
+  border-top: none;
+  border-right: none;
+}
+
 .theme_light .header__theme-menu-button_active {
   border: 1px solid var(--second-color);
 }
@@ -45,11 +57,6 @@
     --second-color: #353430;
     --title-color: #ffc2e6;
     --main-background: url(../images/cover-image-light.png);
-  }
-
-  .page.theme_light {
-    background-image: url(../images/cover-image-light.png);
-    background-color: var(--main-color);
   }
 
   .decorated-zone {
