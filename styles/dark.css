@@ -6,8 +6,16 @@
   --main-background: url(../images/cover-image-dark.png);
 }
 
+.page {
+  background-image: var(--main-background);
+}
+
 .page.theme_dark .decorated-zone {
   position: relative;
+}
+
+.page.theme_auto {
+  background-image: var(--main-background);
 }
 
 .page.theme_dark .decorated-zone::before {
