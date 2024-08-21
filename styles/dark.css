@@ -14,9 +14,9 @@
   position: relative;
 }
 
-.page.theme_auto {
+/* .page.theme_auto {
   background-image: var(--main-background);
-}
+} */
 
 .page.theme_dark .decorated-zone::before {
   border: 1px solid var(--accent-color);
