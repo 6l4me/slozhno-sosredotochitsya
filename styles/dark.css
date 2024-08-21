@@ -6,10 +6,10 @@
   --main-background: url(../images/cover-image-dark.png);
 }
 
-.page.theme_dark {
+/* .page.theme_dark {
   background-image: var(--main-background);
   background-color: var(--main-color);
-}
+} */
 
 .page.theme_dark .decorated-zone {
   position: relative;
