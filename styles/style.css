@@ -2,7 +2,7 @@
 
 .page {
   background-color: var(--main-color);
-  /* background-image: var(--main-background); */
+  background-image: var(--main-background);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: repeat;

@@ -3,20 +3,12 @@
   --main-color: #000028;
   --second-color: #f1b2ce;
   --title-color: #db00ff;
-  --main-background: url(../images/cover-image-dark.png);
-}
-
-.page {
-  background-image: var(--main-background);
+  /* --main-background: url(../images/cover-image-dark.png); */
 }
 
 .page.theme_dark .decorated-zone {
   position: relative;
 }
-
-/* .page.theme_auto {
-  background-image: var(--main-background);
-} */
 
 .page.theme_dark .decorated-zone::before {
   border: 1px solid var(--accent-color);
