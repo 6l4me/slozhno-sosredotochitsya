@@ -11,15 +11,11 @@
 }
 
 .theme_light .decorated-zone::before {
-  border: 1px solid var(--second-color);
-  border-bottom: none;
-  border-left: none;
+  border-color: var(--second-color);
 }
 
 .theme_light .decorated-zone::after {
-  border: 1px solid var(--second-color);
-  border-top: none;
-  border-right: none;
+  border-color: var(--second-color);
 }
 
 .theme_light .header__theme-menu-button_active {
@@ -59,20 +55,12 @@
     --main-background: url(../images/cover-image-light.png);
   }
 
-  .decorated-zone {
-    position: relative;
-  }
-  
   .decorated-zone::before {
-    border: 1px solid var(--second-color);
-    border-bottom: none;
-    border-left: none;
+    border-color: var(--second-color);
   }
   
   .decorated-zone::after {
-    border: 1px solid var(--second-color);
-    border-top: none;
-    border-right: none;
+    border-color: var(--second-color);
   }
 
   .theme_auto .text__dark {
